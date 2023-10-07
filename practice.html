@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>学生信息管理系统</title>
+    <link href="../styles/practice.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt"  rel="stylesheet"  type="text/css" />
+    <script src="../scripts/practice.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+  </head>
+  <body>
+    <table id="myTable">
+      <caption>学生信息管理系统</caption>
+      <button onclick=" addTableRow() ">新增</button>  <button id="deleteButton" >删除</button>
+      <thead>
+        <tr>
+          <lable1 for="input1" id="lable1">   
+          <th><input type="checkbox" name="option1"> </th>
+          </lable1>
+          <th scope="col">序号</th>
+          <th scope="col">学号</th>
+          <th scope="col">姓名</th>
+          <th scope="col">学院</th>
+          <th scope="col">专业</th>
+          <th scope="col">年级</th>
+          <th scope="col">班级</th>
+          <th scope="col">年龄</th>
+          <th scope="col">操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <lable2 for="input2" id="lable2">
+          <th><input type="checkbox" name="option2"></th>
+          </lable2>
+          <th scope="row">1</th>
+          <td>11503080210</td>
+          <td>张三</td>
+          <td>计算机科学与工程学院</td>
+          <td>软件工程</td>
+          <td>2015</td>
+          <td>2</td>
+          <td>18</td>
+          <td>修改</td>
+       </tr>   
+      </tbody>
+    </table>
+
+   <div class="container">
+    <button class="button" id="startBtn" disabled>
+      <i class="fa-solid fa-angles-left"></i>
+    </button>
+    <button class="button prevNext"id="prev" disabled>
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+
+    <div class="links">
+      <a href="#" class="link active">1</a>
+      <a href="#" class="link">2</a>
+      <a href="#" class="link">3</a>
+      <a href="#" class="link">4</a>
+      <a href="#" class="link">5</a>
+    </div>
+
+      <button class="button prevNext" id="next">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+      <button class="button" id="endBtn">
+        <i class="fa-solid fa-angles-right"></i>
+      </button>
+   </div>
+  </body>
+</html>
